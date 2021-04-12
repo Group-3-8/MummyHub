@@ -1,0 +1,139 @@
+﻿@model FagElGamousExcavation.Models.BioSampleData
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BioSampleData</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BioSamplePk)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BioSamplePk)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialLocSummary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialLocSummary)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BagNum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BagNum)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LowPairNs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LowPairNs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HighPairNs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HighPairNs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialLocationNs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialLocationNs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LowPairEw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LowPairEw)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HighPairEw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HighPairEw)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialLocationEw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialLocationEw)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialSubplot)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialSubplot)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Area)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Area)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cluster)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cluster)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateFound)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateFound)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.YearFound)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.YearFound)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PreviouslySampled)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PreviouslySampled)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BiologicalNotes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BiologicalNotes)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BiologicalInitials)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BiologicalInitials)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Column21)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Column21)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BioSamplePk2">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

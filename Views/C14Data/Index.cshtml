@@ -1,0 +1,222 @@
+﻿@model IEnumerable<FagElGamousExcavation.Models.C14Data>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.C14Pk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocSummary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UniqId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rack)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowPairNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighPairNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocationNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowPairEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighPairEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocationEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialSubplot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rack2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TubeNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Foci)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.C14Sample2017)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Questions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Conventional14cAgeBp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Column25)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model._14cCalendarDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calibrated95CalendarDateMax)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calibrated95CalendarDateMin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calibrated95CalendarDateSpan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Calibrated95CalendarDateAvg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Column33)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.C14Pk)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocSummary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UniqId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rack)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowPairNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighPairNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocationNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowPairEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighPairEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocationEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialSubplot)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rack2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TubeNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Foci)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.C14Sample2017)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Questions)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Conventional14cAgeBp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Column25)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item._14cCalendarDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calibrated95CalendarDateMax)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calibrated95CalendarDateMin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calibrated95CalendarDateSpan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calibrated95CalendarDateAvg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Column33)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.C14Pk2">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.C14Pk2">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.C14Pk2">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

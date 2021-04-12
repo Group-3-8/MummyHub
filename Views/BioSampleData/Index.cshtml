@@ -1,0 +1,150 @@
+﻿@model IEnumerable<FagElGamousExcavation.Models.BioSampleData>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BioSamplePk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocSummary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BagNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowPairNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighPairNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocationNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowPairEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighPairEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocationEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialSubplot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cluster)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateFound)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearFound)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreviouslySampled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BiologicalNotes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BiologicalInitials)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Column21)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BioSamplePk)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocSummary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BagNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowPairNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighPairNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocationNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowPairEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighPairEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocationEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialSubplot)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cluster)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateFound)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearFound)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreviouslySampled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BiologicalNotes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BiologicalInitials)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Column21)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BioSamplePk2">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BioSamplePk2">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BioSamplePk2">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,130 @@
+﻿@model FagElGamousExcavation.Models.BioSampleData
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>BioSampleData</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="BioSamplePk2" />
+            <div class="form-group">
+                <label asp-for="BioSamplePk" class="control-label"></label>
+                <input asp-for="BioSamplePk" class="form-control" />
+                <span asp-validation-for="BioSamplePk" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BurialId" class="control-label"></label>
+                <input asp-for="BurialId" class="form-control" />
+                <span asp-validation-for="BurialId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BurialLocSummary" class="control-label"></label>
+                <input asp-for="BurialLocSummary" class="form-control" />
+                <span asp-validation-for="BurialLocSummary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BagNum" class="control-label"></label>
+                <input asp-for="BagNum" class="form-control" />
+                <span asp-validation-for="BagNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LowPairNs" class="control-label"></label>
+                <input asp-for="LowPairNs" class="form-control" />
+                <span asp-validation-for="LowPairNs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HighPairNs" class="control-label"></label>
+                <input asp-for="HighPairNs" class="form-control" />
+                <span asp-validation-for="HighPairNs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BurialLocationNs" class="control-label"></label>
+                <input asp-for="BurialLocationNs" class="form-control" />
+                <span asp-validation-for="BurialLocationNs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LowPairEw" class="control-label"></label>
+                <input asp-for="LowPairEw" class="form-control" />
+                <span asp-validation-for="LowPairEw" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HighPairEw" class="control-label"></label>
+                <input asp-for="HighPairEw" class="form-control" />
+                <span asp-validation-for="HighPairEw" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BurialLocationEw" class="control-label"></label>
+                <input asp-for="BurialLocationEw" class="form-control" />
+                <span asp-validation-for="BurialLocationEw" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BurialSubplot" class="control-label"></label>
+                <input asp-for="BurialSubplot" class="form-control" />
+                <span asp-validation-for="BurialSubplot" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Area" class="control-label"></label>
+                <input asp-for="Area" class="form-control" />
+                <span asp-validation-for="Area" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BurialNumber" class="control-label"></label>
+                <input asp-for="BurialNumber" class="form-control" />
+                <span asp-validation-for="BurialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cluster" class="control-label"></label>
+                <input asp-for="Cluster" class="form-control" />
+                <span asp-validation-for="Cluster" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateFound" class="control-label"></label>
+                <input asp-for="DateFound" class="form-control" />
+                <span asp-validation-for="DateFound" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="YearFound" class="control-label"></label>
+                <input asp-for="YearFound" class="form-control" />
+                <span asp-validation-for="YearFound" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreviouslySampled" class="control-label"></label>
+                <input asp-for="PreviouslySampled" class="form-control" />
+                <span asp-validation-for="PreviouslySampled" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BiologicalNotes" class="control-label"></label>
+                <input asp-for="BiologicalNotes" class="form-control" />
+                <span asp-validation-for="BiologicalNotes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BiologicalInitials" class="control-label"></label>
+                <input asp-for="BiologicalInitials" class="form-control" />
+                <span asp-validation-for="BiologicalInitials" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Column21" class="control-label"></label>
+                <input asp-for="Column21" class="form-control" />
+                <span asp-validation-for="Column21" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
