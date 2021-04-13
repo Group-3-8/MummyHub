@@ -1,0 +1,60 @@
+﻿@model AllData
+
+<h3>Filter</h3>
+<br />
+
+<form asp-action="Index" asp-controller="AllData" method="get">
+    @*burial direction*@
+    <a asp-route-burial="@Model.BurialDirection"></a>
+    <label asp-route-burial="BurialDirection"></label>
+    <select asp-for="BurialDirection">
+        <option value="E">East</option>
+        <option value="W">West</option>
+    </select>
+
+    @*year*@
+    <label asp-for="YearFound"></label>
+    <input type="text" asp-for="YearFound" />
+
+    @*hair*@
+    <label asp-for="HairColor"></label>
+    <select asp-for="HairColor">
+        <option value="B">Brown</option>
+        <option value="K">Black</option>
+        <option value="A">Red-Brown</option>
+        <option value="R">Red</option>
+        <option value="D">Blond</option>
+        <option value="U">Unknown</option>
+    </select>
+
+    @*location*@    
+    <label asp-for="BurialId"></label>
+    <input type="text" asp-for="BurialId"/>
+
+    @*burial situation*@
+    <label asp-for="BurialSituation"></label>
+    <input type="search" asp-for="BurialSituation"/>
+
+    @*age*@
+    <label asp-for="EstimateAgeSingle"></label>
+    <select asp-for="EstimateAgeSingle">
+        <option value="N">Newborn/Infant</option>
+        <option value="I">Infant</option>
+        <option value="C">Child</option>
+        <option value="A">Adult</option>
+        <option value="U">Unknown</option>
+    </select>
+
+    @*gender*@
+    <label asp-for="GenderCode"></label>
+    <select asp-for="GenderCode">
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+        <option value="U">Unknown</option>
+    </select>
+    
+    <input type="submit"/>
+@*    <input name="_RequestVerificationToken" type="hidden" value="<token_generated_here>"/>*@
+</form>
+
+

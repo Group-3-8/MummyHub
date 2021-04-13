@@ -6,12 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FagElGamousExcavation.Models;
+using FagElGamousExcavation.Components;
+using FagElGamousExcavation.Models.ViewModel;
+using FagElGamousExcavation.Models.Filter;
 
 namespace FagElGamousExcavation
 {
     public class AllDataController : Controller
     {
-        private readonly INDIContext _context;
+        private INDIContext _context { get; set; }
 
         public AllDataController(INDIContext context)
         {
@@ -19,11 +22,39 @@ namespace FagElGamousExcavation
         }
 
         // GET: AllData
-        public async Task<IActionResult> Index()
+        /*        [HttpGet]
+                public async Task<IActionResult> Index()
+                {
+                    return View(New AllDataViewModel await _context.AllData.Take(5).ToListAsync());
+                }*/
+        [HttpGet]
+        public IActionResult Index(AllDataSearchModel filter, int? burialId, int pageNum = 1)
         {
-            return View(await _context.AllData.ToListAsync());
+            var filterLogic = new FilterLogic(_context);
+
+            var queryModel = filterLogic.GetMummies(filter);
+
+            return View(new AllDataViewModel
+            {
+
+                AllData = (queryModel
+                .Take(5)
+                .ToList())
+            });
         }
 
+/*        [HttpPost]
+        public IActionResult Index(AllDataSearchModel searchModel)
+        {
+            return View(_context.AllData
+                .Where(x => x.BurialDirection.Contains(searchModel.BurialDirection) || searchModel.BurialDirection == null)
+                .Where(x => x.YearFound.Contains(searchModel.YearFound) || searchModel.YearFound == null)
+                .Where(x => x.HairColor.Contains(searchModel.HairColor) || searchModel.HairColor == null)
+                .Where(x => x.BurialId.Contains(searchModel.BurialLocation) || searchModel.BurialLocation == null)
+                .Where(x => x.EstimateAgeSingle.Contains(searchModel.AgeGroup) || searchModel.AgeGroup == null)
+                .Where(x => x.GenderCode.Contains(searchModel.Gender) || searchModel.Gender == null)
+                );
+        }*/
         // GET: AllData/Details/5
         public async Task<IActionResult> Details(int? id)
         {
