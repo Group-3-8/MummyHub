@@ -1,0 +1,187 @@
+﻿@model FagElGamousExcavation.Models.CranialData
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>CranialData</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SampleNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SampleNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaximumCranialLength)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaximumCranialLength)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaximumCranialBreadth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaximumCranialBreadth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BasionBregmaHeight)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BasionBregmaHeight)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BasionNasion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BasionNasion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BasionProsthionLength)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BasionProsthionLength)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BizygomaticDiameter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BizygomaticDiameter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NasionProsthion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NasionProsthion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaximumNasalBreadth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaximumNasalBreadth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InterorbitalBreadth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InterorbitalBreadth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialLocSummary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialLocSummary)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UniqId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UniqId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LowPairNs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LowPairNs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HighPairNs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HighPairNs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialPositioningNorthSouthDirection)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialPositioningNorthSouthDirection)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialLocationNs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialLocationNs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LowPairEw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LowPairEw)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HighPairEw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HighPairEw)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialPositioningEastWestDirection)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialPositioningEastWestDirection)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialLocationEw)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialLocationEw)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialDepth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialDepth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BurialSubplot)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BurialSubplot)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtifactsDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ArtifactsDescription)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ArtifactFound)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ArtifactFound)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GilesGender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GilesGender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BodyGender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BodyGender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GenderCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GenderCode)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CranialDataPk">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

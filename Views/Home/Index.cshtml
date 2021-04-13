@@ -59,22 +59,24 @@
                     </div>
                     <div class="media-body pl-3">
                         <h3 class="heading">Burial Summary Data</h3>
-                        <p>All current data for the artifacts that were discovered in the Fag El Gamous cemetary.</p>
-                        <p><a asp-page="" class="btn-custom">View Here</a></p>
+                        <p>All current data for the artifacts that were discovered in the Fag El Gamous cemetary (Warning: Loading times may be slow due to the large size of the data).</p>
+                        <p><a asp-controller="AllData" asp-action="Index" class="btn-custom">View Here</a></p>
                     </div>
                 </div>
+
                 <div class="d-block d-flex">
                     <div class="icon d-flex justify-content-center align-items-center">
                         <span class="flaticon-tyre"></span>
                     </div>
                     <div class="media-body pl-3">
                         <h3 class="heading">Cranial Data</h3>
-                        <p>Add explanation</p>
-                        <p><a href="#" class="btn-custom">View Here</a></p>
+                        <p>Sourced from an older Access database containing information on skull measurements.</p>
+                        <p><a asp-controller="CranialData" asp-action="Index" class="btn-custom">View Here</a></p>
                     </div>
                 </div>
 
             </div>
+
             <div class="col-md-4 services">
                 <div class="d-block d-flex">
                     <div class="icon d-flex justify-content-center align-items-center">
@@ -82,18 +84,19 @@
                     </div>
                     <div class="media-body pl-3">
                         <h3 class="heading">Carbon Dating</h3>
-                        <p>Add explanation</p>
-                        <p><a href="#" class="btn-custom">View Here</a></p>
+                        <p>Contains results from carbon-dating analysis.</p>
+                        <p><a asp-controller="C14Data" asp-action="Index" class="btn-custom">View Here</a></p>
                     </div>
                 </div>
+
                 <div class="d-block d-flex">
                     <div class="icon d-flex justify-content-center align-items-center">
                         <span class="flaticon-car-engine"></span>
                     </div>
                     <div class="media-body pl-3">
                         <h3 class="heading">Biological Samples</h3>
-                        <p>Add explanation.</p>
-                        <p><a href="#" class="btn-custom">View Here</a></p>
+                        <p>Data that catalogues the hair, bone, and tissue biological samples that have been collected by researchers.</p>
+                        <p><a asp-controller="BioSampleData" asp-action="Index" class="btn-custom">View Here</a></p>
                     </div>
                 </div>
             </div>
@@ -105,7 +108,7 @@
                     </div>
                     <div class="media-body pl-3">
                         <h3 class="heading">Images</h3>
-                        <p>Add explanation</p>
+                        <p>Sample photos from the dig.</p>
                         <p><a href="#" class="btn-custom">View Here</a></p>
                     </div>
                 </div>

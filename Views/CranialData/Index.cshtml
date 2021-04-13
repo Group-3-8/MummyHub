@@ -1,0 +1,198 @@
+﻿@model IEnumerable<FagElGamousExcavation.Models.CranialData>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SampleNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaximumCranialLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaximumCranialBreadth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BasionBregmaHeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BasionNasion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BasionProsthionLength)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BizygomaticDiameter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NasionProsthion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaximumNasalBreadth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InterorbitalBreadth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocSummary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UniqId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowPairNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighPairNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialPositioningNorthSouthDirection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocationNs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowPairEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighPairEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialPositioningEastWestDirection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialLocationEw)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialDepth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BurialSubplot)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArtifactsDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ArtifactFound)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GilesGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BodyGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GenderCode)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SampleNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaximumCranialLength)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaximumCranialBreadth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BasionBregmaHeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BasionNasion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BasionProsthionLength)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BizygomaticDiameter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NasionProsthion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaximumNasalBreadth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InterorbitalBreadth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocSummary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UniqId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowPairNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighPairNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialPositioningNorthSouthDirection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocationNs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowPairEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighPairEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialPositioningEastWestDirection)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialLocationEw)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialDepth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BurialSubplot)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtifactsDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtifactFound)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GilesGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BodyGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenderCode)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CranialDataPk">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CranialDataPk">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CranialDataPk">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
