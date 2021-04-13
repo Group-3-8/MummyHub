@@ -22,24 +22,34 @@ namespace FagElGamousExcavation
         }
 
         // GET: AllData
-        /*        [HttpGet]
-                public async Task<IActionResult> Index()
-                {
-                    return View(New AllDataViewModel await _context.AllData.Take(5).ToListAsync());
-                }*/
+        
         [HttpGet]
-        public IActionResult Index(AllDataSearchModel filter, int? burialId, int pageNum = 1)
+        public IActionResult Index(AllDataSearchModel filter, string? burialId, int pageNum = 1)
         {
             var filterLogic = new FilterLogic(_context);
 
             var queryModel = filterLogic.GetMummies(filter);
+            int pageSize = 60;
+
+            //pagination
 
             return View(new AllDataViewModel
             {
-
                 AllData = (queryModel
-                .Take(5)
-                .ToList())
+                .Skip((pageNum - 1) * pageSize)
+                .Take(pageSize)
+                .ToList()),
+
+                PageNumberingInfo = new PageNumberingInfo
+                {
+                    NumItemsPerPage = pageSize,
+                    CurrentPage = pageNum,
+                    TotalNumItems = (burialId == null ? queryModel.Count() :
+                    queryModel.Where(x => x.BurialId == burialId).Count())
+                },
+                //},
+
+                UrlInfo = Request.QueryString.Value
             });
         }
 

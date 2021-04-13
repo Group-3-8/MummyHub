@@ -5,13 +5,11 @@ using System.Threading.Tasks;
 
 namespace FagElGamousExcavation.Models.ViewModel
 {
-    public class AllDataViewModel
+    public class BioViewModel
     {
-        public IEnumerable<AllData> AllData { get; set; }
-        public AllDataSearchModel Filter{ get; set; }
+        public IEnumerable<BioSampleData> BioData { get; set; }
+        //public AllDataSearchModel Filter { get; set; }
         public PageNumberingInfo PageNumberingInfo { get; set; }
         public string UrlInfo { get; set; }
-
-
     }
 }

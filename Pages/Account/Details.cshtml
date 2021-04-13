@@ -1,5 +1,7 @@
 ﻿@page
 @model DetailsModel
+<h1>Account Details</h1>
+<br />
 <table class="table table-sm table-bordered">
     <tbody>
         @if (Model.IdentityUser == null)
@@ -10,6 +12,7 @@
         {
             <tr><th>Username</th><td>@Model.IdentityUser.UserName</td></tr>
             <tr><th>Email</th><td>@Model.IdentityUser.Email</td></tr>
+            @*<tr><th>Role</th><td>@Model.IdentityRole</td></tr>*@
         }
     </tbody>
 </table>
