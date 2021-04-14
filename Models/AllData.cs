@@ -17,22 +17,37 @@ namespace FagElGamousExcavation.Models
         public string UniqId { get; set; }
         public string BurialId { get; set; }
         public string BurialLocSummary { get; set; }
+        //[Required]
         public string BurialLocationNs { get; set; }
+        //[Required]
         public string BurialLocationEw { get; set; }
+        //[Required]
         public string LowPairNs { get; set; }
+        //[Required]
         public string HighPairNs { get; set; }
+        //[Required]
         public string LowPairEw { get; set; }
+        //[Required]
         public string HighPairEw { get; set; }
+        //[Required]
         public string BurialSubplot { get; set; }
         public string AreaHillBurials { get; set; }
+        //[Required]
         public string TombBurial { get; set; }
+        //[Required]
         public string BurialDepth { get; set; }
+        //[Required]
         public string SouthToHead { get; set; }
+        //[Required]
         public string SouthToFeet { get; set; }
+        //[Required]
         public string WestToHead { get; set; }
+        //[Required]
         public string WestToFeet { get; set; }
         public string BurialSituation { get; set; }
+        //[Required]
         public string LengthOfBurialCm { get; set; }
+        //[Required]
         public string BurialNumber { get; set; }
         public string SampleNumber { get; set; }
         public string GenderCode { get; set; }
@@ -74,6 +89,7 @@ namespace FagElGamousExcavation.Models
         public string MaximumNasalBreadth { get; set; }
         public string InterorbitalBreadth { get; set; }
         public string ArtifactsDescription { get; set; }
+        //[Required]
         public string Goods { get; set; }
         public string HairColor { get; set; }
         public string HairColorCode { get; set; }
