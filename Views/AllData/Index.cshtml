@@ -76,8 +76,10 @@
                         @if (SignInManager.IsSignedIn(User))
                         {
                             <td>
-                                <a asp-action="Edit" asp-route-id="@item.UniqId2">Edit</a> |
-                                <a asp-action="Details" asp-route-id="@item.UniqId2">Details</a> |
+                                <a asp-action="Edit" asp-route-id="@item.UniqId2">Edit</a>
+                                <br />
+                                <a asp-action="Details" asp-route-id="@item.UniqId2">Details</a>
+                                <br />
                                 <a asp-action="Delete" asp-route-id="@item.UniqId2">Delete</a>
                             </td>
                         }
