@@ -47,7 +47,6 @@ namespace FagElGamousExcavation
                     TotalNumItems = (burialId == null ? queryModel.Count() :
                     queryModel.Where(x => x.BurialId == burialId).Count())
                 },
-                //},
 
                 UrlInfo = Request.QueryString.Value
             });

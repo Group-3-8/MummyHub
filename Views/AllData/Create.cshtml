@@ -14,6 +14,13 @@
             @*Burial ID*@
             <h4>Enter to Create Burial ID</h4>
             <div class="form-group">
+                <label asp-for="BurialId">Burial ID</label>
+                <input type="text" asp-for="BurialId" placeholder="N150-160E10-20NW#5" />
+                <span asp-validation-for="BurialId" class="text-danger"></span>
+                <p>Example: N150-160E10-20NW#5</p>
+            </div>
+
+            <div class="form-group">
                 <label asp-for="BurialLocationNs" class="control-label">Burial Location N/S</label>
                 <input asp-for="BurialLocationNs" class="form-control" />
                 <span asp-validation-for="BurialLocationNs" class="text-danger"></span>
