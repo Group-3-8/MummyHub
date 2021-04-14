@@ -3,6 +3,7 @@
 <br />
 
 <form method="get" asp-action="Index" asp-controller="AllData">
+    <%= Html.AntiForgeryToken() %>
     @*burial direction*@
     <label asp-for="BurialDirection">Burial Direction</label>
     <select asp-for="BurialDirection">
@@ -69,5 +70,5 @@
 
     <input type="submit" />
     <input type="button" onclick="window.location.href='/AllData'" value="Reset"/>
-    <input name="_RequestVerificationToken" type="hidden" value="<token_generated_here>"/>
+    @*<input name="_RequestVerificationToken" type="hidden" value="<token_generated_here>"/>*@
 </form>
