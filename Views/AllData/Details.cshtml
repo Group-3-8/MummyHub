@@ -5,10 +5,13 @@
 @{
     ViewData["Title"] = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    string imgSource = Model.BurialId.ToString();
 }
 
-<h1>Mummy Details</h1>
 
+
+<h1>Mummy Details</h1>
+@Html.Partial("Img", Model);
 <div>
     <hr />
     <dl class="row">

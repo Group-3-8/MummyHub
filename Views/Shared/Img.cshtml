@@ -1,0 +1,9 @@
+﻿@model AllData
+@{ 
+    string imgSrc = Model.BurialId;
+    imgSrc = imgSrc.Replace("#", "%23");
+    imgSrc = imgSrc + ".JPG";
+    imgSrc = "https://elasticbeanstalk-us-east-1-571860719258.s3.amazonaws.com/Photos+2/" + imgSrc;
+}
+<p>Image</p>
+<img src="@imgSrc" alt="should be here" />

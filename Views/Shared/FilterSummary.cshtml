@@ -3,7 +3,7 @@
 <br />
 
 <form method="get" asp-action="Index" asp-controller="AllData">
-    <%= Html.AntiForgeryToken() %>
+
     @*burial direction*@
     <label asp-for="BurialDirection">Burial Direction</label>
     <select asp-for="BurialDirection">
