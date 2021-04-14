@@ -32,7 +32,6 @@ namespace FagElGamousExcavation.Infrastructure
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
         public string PageClassSelected { get; set; }
-        public string PageParemeters { get; set; }
 
         [HtmlAttributeNotBound]
         [ViewContext]

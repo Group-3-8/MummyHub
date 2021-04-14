@@ -59,6 +59,13 @@ namespace FagElGamousExcavation
                 opts.User.RequireUniqueEmail = true;
                 opts.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyz";
             });
+
+            services.ConfigureApplicationCookie(opts =>
+            {
+                opts.Cookie.Name = ".AspNetCore.Identity.Application";
+                opts.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+                opts.SlidingExpiration = true;
+            });
         }
 
 

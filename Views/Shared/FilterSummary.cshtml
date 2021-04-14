@@ -6,9 +6,9 @@
     @*burial direction*@
     <label asp-for="BurialDirection">Burial Direction</label>
     <select asp-for="BurialDirection">
+        <option value="">--</option>
         <option value="E">East</option>
         <option value="W">West</option>
-        <option value="null">--</option>
     </select>
     <br />
 
@@ -20,13 +20,13 @@
     @*hair*@
     <label asp-for="HairColor">Hair Color</label>
     <select asp-for="HairColor">
+        <option value="">--</option>
         <option value="B">Brown</option>
         <option value="K">Black</option>
         <option value="A">Red-Brown</option>
         <option value="R">Red</option>
         <option value="D">Blond</option>
         <option value="U">Unknown</option>
-        <option value="null">--</option>
     </select>
     <br />
     <br />
@@ -41,22 +41,22 @@
     @*age*@
     <label asp-for="AgeGroup">Age Group</label>
     <select asp-for="AgeGroup">
+        <option value="">--</option>
         <option value="N">Newborn/Infant</option>
         <option value="I">Infant</option>
         <option value="C">Child</option>
         <option value="A">Adult</option>
         <option value="U">Unknown</option>
-        <option value="null">--</option>
     </select>
     <br />
 
     @*gender*@
     <label asp-for="Gender">Gender</label>
     <select asp-for="Gender">
+        <option value="">--</option>
         <option value="M">Male</option>
         <option value="F">Female</option>
         <option value="U">Unknown</option>
-        <option value="null">--</option>
     </select>
     <br />
     <br />
@@ -68,5 +68,6 @@
     <br />
 
     <input type="submit" />
-    @*    <input name="_RequestVerificationToken" type="hidden" value="<token_generated_here>"/>*@
+    <input type="button" onclick="window.location.href='/AllData'" value="Reset"/>
+    <input name="_RequestVerificationToken" type="hidden" value="<token_generated_here>"/>
 </form>

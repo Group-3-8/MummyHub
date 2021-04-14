@@ -29,7 +29,7 @@ namespace FagElGamousExcavation
             var filterLogic = new FilterLogic(_context);
 
             var queryModel = filterLogic.GetMummies(filter);
-            int pageSize = 60;
+            int pageSize = 120;
 
             //pagination
 

@@ -7,7 +7,6 @@ namespace FagElGamousExcavation.Models.ViewModel
 {
     public class PageNumberingInfo
     {
-        //public PageNumberingInfo PageNumberingInfo { get; set; }
         public int NumItemsPerPage { get; set; }
         public int CurrentPage { get; set; }
         public int TotalNumItems { get; set; }
